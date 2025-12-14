@@ -10,9 +10,10 @@ def main():
         sys.exit(1)
 
     numerator = float(sys.argv[1])
-    denominator = float(sys.argv[1])
+    denominator = float(sys.argv[2])
 
-    safe_divide(numerator, denominator)
+    result = safe_divide(numerator, denominator)
+    return result
 
     # Setup a small library
     library = Library()
