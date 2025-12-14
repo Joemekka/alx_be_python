@@ -6,6 +6,21 @@ class Book:
         self.author = author
         self.year = year
 
+    def __str__(self):
+        if self.year is not None:
+            return f"Book: {self.title} by {self.author} ({self.year})"
+        return f"Book: {self.title} by {self.author}"
+
+    def __repr__(self):
+        return (
+            f"Book(title={self.title!r}, "
+            f"author={self.author!r}, "
+            f"year={self.year!r})"
+        )
+
+    def __del__(self):
+        print(f"Book '{self.title}' has been deleted.")
+
 
 class EBook(Book):
     """Derived class representing an electronic book."""
