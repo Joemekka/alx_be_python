@@ -12,9 +12,7 @@ def main():
     numerator = sys.argv[1]
     denominator = sys.argv[2]
 
-    result = safe_divide(numerator, denominator)
-    print(f"The result of the division is {result}")
-    print("The result of the division is 6.0")
+    safe_divide(numerator, denominator)
 
     # Setup a small library
     library = Library()
