@@ -10,7 +10,7 @@ def main():
         sys.exit(1)
 
     numerator = float(sys.argv[1])
-    denominator = float(sys.argv[2])
+    denominator = float(sys.argv[1])
 
     safe_divide(numerator, denominator)
 
