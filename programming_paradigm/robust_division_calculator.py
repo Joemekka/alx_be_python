@@ -3,8 +3,8 @@ def safe_divide(numerator, denominator):
         num1 = float(numerator)
         num2 = float(denominator)
 
-        result = print(f"The result of the division is {num1 / num2}")
-        return result
+        result = num1 / num2
+        return f"The result of the division is {result}"
 
     except ZeroDivisionError:
         print("Error: Cannot divide by zero.")
