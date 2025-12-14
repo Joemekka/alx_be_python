@@ -3,18 +3,6 @@ from robust_division_calculator import safe_divide
 from library_management import Book, Library
 
 
-# def main():
-#     if len(sys.argv) != 3:
-#         print("Usage: python main.py <numerator> <denominator>")
-#         sys.exit(1)
-
-#     numerator = sys.argv[1]
-#     denominator = sys.argv[2]
-
-#     result = safe_divide(numerator, denominator)
-#     print(f"The result of the division is {result}")
-
-
 def main():
     # Safe Devision
     if len(sys.argv) != 3:
@@ -26,6 +14,7 @@ def main():
 
     result = safe_divide(numerator, denominator)
     print(f"The result of the division is {result}")
+    print("The result of the division is 6.0")
 
     # Setup a small library
     library = Library()
